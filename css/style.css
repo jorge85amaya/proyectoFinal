@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: darkblue;
+}
+ h2{
+    font-size: 2.95em;
+    font-weight: bold;
+    color: rgb(246, 246, 252);
+ }
+
+ h3{
+    font-size: 0.6em;
+    font-weight:900;
+    color: darkblue;
+    padding-top: 55px;
+ }
+
+ p{
+    color:#efefef;
+    font-size: 1.1em;
+    padding: 20px 0;
+ }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imgs/bandera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header{
+    max-width: 1400px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    background: linear-gradient( rgb(143, 191, 247), #efefef 50%, rgb(143, 191, 247));
+    box-shadow: 0 2px 4px black;
+}
+
+header .container{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a{
+    padding: 0 10px;
+}
+
+.logo{
+    width: 11%;
+    padding: 10px;
+}
+
+main{
+    position: absolute;
+    top: 100px;
+}
+
+.seleccionArgentina{
+    max-width: 1400px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.campeones{
+    width: 550px;
+    height: 350px;
+}
+
+article{
+    width: 50%;
+}
+
+.cartas{
+    max-width: 1400px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    border: 1px solid  rgba(54, 10, 175, 0.801);
+    box-shadow: 0 0 10px white;
+    padding: 10px 0;
+}
+
+.cancha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background-image: url(../imgs/cancha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 515px;
+    margin: 10px auto;
+}
+
+.carta{
+    height: 90px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dibuMartinez{
+    background-image: url("../imgs/dibuMartinez.webp");
+}
+
+.dibuMartinez h3{
+    color: rgb(25, 141, 150);
+}
+
+.montiel{
+    background-image: url("../imgs/gonzaMontiel.jpg");
+}
+
+.romero{
+    background-image: url("../imgs/cutiRomero.webp");
+}
+
+.otamendi{
+    background-image: url("../imgs/nicoOtamendi.jpg");
+}
+
+.acuña{
+    background-image: url("../imgs/marcosAcuña.jpg");
+}
+
+.dePaul{
+    background-image: url("../imgs/rodriDePaul.webp");
+}
+
+.fernandez{
+    background-image: url("../imgs/enzoFernandez.jpg");
+}
+
+.fernandez h3{
+    color: rgb(25, 141, 150);
+}
+
+.macAllister{
+    background-image: url("../imgs/alexisMacAllister.jpg");
+}
+
+.diMaria{
+    background-image: url("../imgs/angelDiMaria.jpg");
+}
+
+.lMartinez{
+    background-image: url("../imgs/lautaroMartinez.webp");
+}
+
+.messi{
+    background-image: url("../imgs/messi.jpg");
+}
+
+.carta:hover {
+    transform: scale(1.7) translateY(-10px);
+}
+
+a{
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 1.5px 7.5px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(48, 4, 90, 0.822);
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    background-color: rgb(104, 11, 122);
+    color: #efefef;
+}
+
+
+
+.containInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: #efefef;
+    height: 100vh;
+    width: 100%;
+}
+
+.figu{
+    width: 360px;
+    height: 360px;
+}
+
+ul{
+    margin-top: 70px;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.h1Jugadores{
+    text-align: center;
+    color: #efefef;
+}
+
+.volverJugadores{
+    padding: 10px;
+    background-color: brown;
+}
+
+.volverJugadores:hover{
+    background-color: rgb(150, 3, 3);
+}
+
+.cartasEquipo{
+    display: flex;
+}
+
+.suplentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.suplentes h3{
+    font-size: 2em;
+    font-weight: bold;
+    color: #efefef;
+}
+
+.suplentes li{
+    text-align: left;
+    margin: 0;
+    padding: 2px;
+    color: #efefef;
+}
