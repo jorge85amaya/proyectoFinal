@@ -18,16 +18,16 @@
             <img src="./imgs/logoAfa.webp" alt="logo" class="logo">
             <h1>Vamos Argentina!!!</h1>
             <nav>
-                <div class="nav">
-                    <a href="#">Jorge</a>
-                    <a href="#">Benildo</a>
-                    <a href="#">Amaya</a>
-                </div>
+                <ul class="navegador">
+                    <li><a href="#selecArg" class="linkNav">Inicio</a></li>
+                    <li><a href="#cartas" class="linkNav">Formacion</a></li>
+                    <li><a href="#tabs" class="linkNav">Nosotros</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="seleccionArgentina">
+        <section class="seleccionArgentina" id="selecArg">
             <article>
                 <h2>Seleccion de fútbol Argentina</h2>
                 <p>La selección de fútbol de Argentina es el equipo formado por jugadores con dicha nacionalidad que representa desde 1902 a la Asociación del Fútbol Argentino (AFA) en las competiciones oficiales organizadas por la Confederación Sudamericana de Fútbol (Conmebol), ente rector de ese deporte en América del Sur, y por la Federación Internacional de Fútbol Asociación (FIFA).</p>
@@ -56,12 +56,12 @@
                 </button>
               </div>
         </section>
-        <section class="cartas">
+        <section class="cartas" id="cartas">
             <h2>Formacion</h2>
             <div class="cartasEquipo">
                 <div class="suplentes">
                     <h3>Suplentes</h3>
-                    <ul>
+                    <ul class="listaSuplentes">
                         <li>Franco Armani</li>
                         <li>Geronimo Rulli</li>
                         <li>Nahuel Molina</li>
@@ -83,59 +83,60 @@
                     <div class="fila">
                         <div class="carta dibuMartinez">
                             <h3>Dibu<br>Martinez</h3>
-                            <a href="./html/dibu.html" >Info</a>
+                            <a href="./html/dibu.html" class="linkJugadores">Info</a>
                         </div>
                     </div>
                     <div class="fila">
                         <div class="carta montiel">
                             <h3>Gonzalo<br>Montiel</h3>
-                            <a href="./html/montiel.html" >Info</a>
+                            <a href="./html/montiel.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta romero">
                             <h3>Cuti<br>Romero</h3>
-                            <a href="./html/cutiRomero.html" >Info</a>
+                            <a href="./html/cutiRomero.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta otamendi">
                             <h3>Nico<br>Otamendi</h3>
-                            <a href="./html/otamendi.html" >Info</a>
+                            <a href="./html/otamendi.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta acuña">
                             <h3>Marcos<br>Acuña</h3>
-                            <a href="./html/acuña.html" >Info</a>
+                            <a href="./html/acuña.html" class="linkJugadores">Info</a>
                         </div>
                     </div>
                     <div class="fila">
                         <div class="carta dePaul">
                             <h3>Rodrigo<br>De Paul</h3>
-                            <a href="./html/dePaul.html" >Info</a>
+                            <a href="./html/dePaul.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta fernandez">
                             <h3>Enzo<br>Fernandez</h3>
-                            <a href="./html/enzoFernandez.html" >Info</a>
+                            <a href="./html/enzoFernandez.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta macAllister">
                             <h3>Alexis<br>Mac Allister</h3>
-                            <a href="./html/macAllister.html" >Info</a>
+                            <a href="./html/macAllister.html" class="linkJugadores">Info</a>
                         </div>
                     </div>
                     <div class="fila">
                         <div class="carta diMaria">
                             <h3>Angel<br>Di Maria</h3>
-                            <a href="./html/diMaria.html" >Info</a>
+                            <a href="./html/diMaria.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta lMartinez">
                             <h3>Lautaro<br>Martinez</h3>
-                            <a href="./html/lautaroMartinez.html" >Info</a>
+                            <a href="./html/lautaroMartinez.html" class="linkJugadores">Info</a>
                         </div>
                         <div class="carta messi">
                             <h3>Lionel<br>Messi</h3>
-                            <a href="./html/messi.html" >Info</a>
+                            <a href="./html/messi.html" class="linkJugadores">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="tabs">
+        <section class="tabs" id="tabs">
+            <h2 class="nosotros">Nosotros</h2>
             <div class="contenedor">
                 <ul class="ul">
                     <li class="li activo">Boton 1</li>
@@ -143,9 +144,179 @@
                     <li class="li">Boton 3</li>
                 </ul>
                 <div class="subcontenedor">
-                    <div class="bloque activo">Soy el bloque 1</div>
-                    <div class="bloque">Suscríbete</div>
-                    <div class="bloque">Sígueme en TikTok</div>
+                    <div class="bloque activo">
+                        <table class="tabla">
+                            <caption>Jugadores</caption>
+                            <tr>
+                                <th>NOMBRE</th>
+                                <th>APELLIDO</th>
+                                <th>POSICION</th>
+                                <th>EDAD</th>
+                                <th>FOTO</th>
+                            </tr>
+                            <tr>
+                                <td>Emanuel</td>
+                                <td>Martinez</td>
+                                <td>Arquero</td>
+                                <td>30 años</td>
+                                <td><img src="./imgs/dibuMartinez.webp" alt="Dibu Martinez" class="fotoTabla"></td> 
+                            </tr>
+                            <tr>
+                                <td>Gonzalo</td>
+                                <td>Montiel</td>
+                                <td>Lateral</td>
+                                <td>25 años</td>
+                                <td><img src="./imgs/gonzaMontiel.jpg" alt="Gonzalo Montiel" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Cristian</td>
+                                <td>Romero</td>
+                                <td rowspan="2">Defensor</td>
+                                <td>24 años</td>
+                                <td><img src="./imgs/cutiRomero.webp" alt="Cuti Romero" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Nicolás</td>
+                                <td>Otamendi</td>
+                                <td>34 años</td>
+                                <td><img src="./imgs/nicoOtamendi.jpg" alt="Nicolás Otamendi" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Marcos</td>
+                                <td>Acuña</td>
+                                <td>Lateral</td>
+                                <td>31 años</td>
+                                <td><img src="./imgs/marcosAcuña.jpg" alt="Marcos Acuña" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Rodrigo</td>
+                                <td>De Paul</td>
+                                <td rowspan="3">Mediocampista</td>
+                                <td>28 años</td>
+                                <td><img src="./imgs/rodriDePaul.webp" alt="Rodrigo De Paul" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Enzo</td>
+                                <td>Fernandez</td>
+                                <td>21 años</td>
+                                <td><img src="./imgs/enzoFernandez.jpg" alt="Enzo Fernandez" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Alexis</td>
+                                <td>Mac Allister</td>
+                                <td>23 años</td>
+                                <td><img src="./imgs/alexisMacAllister.jpg" alt="Alexis Mac Allister" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Angel</td>
+                                <td>Di Maria</td>
+                                <td>Extremo</td>
+                                <td>34 años</td>
+                                <td><img src="./imgs/angelDiMaria.jpg" alt="Angel Di Maria" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Lautaro</td>
+                                <td>Martinez</td>
+                                <td rowspan="2">Centro delantero</td>
+                                <td>25 años</td>
+                                <td><img src="./imgs/lautaroMartinez.webp" alt="Lautaro Martinez" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Lionel</td>
+                                <td>Messi</td>
+                                <td>35 años</td>
+                                <td><img src="./imgs/messi.jpg" alt="Lionel Messi" class="fotoTabla"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bloque">
+                        
+                    </div>
+                    <div class="bloque">
+                        <table class="tabla">
+                            <caption>Jugadores</caption>
+                            <tr>
+                                <th>NOMBRE</th>
+                                <th>APELLIDO</th>
+                                <th>POSICION</th>
+                                <th>EDAD</th>
+                                <th>FOTO</th>
+                            </tr>
+                            <tr>
+                                <td>Emanuel</td>
+                                <td>Martinez</td>
+                                <td>Arquero</td>
+                                <td>30 años</td>
+                                <td><img src="./imgs/dibuMartinez.webp" alt="Dibu Martinez" class="fotoTabla"></td> 
+                            </tr>
+                            <tr>
+                                <td>Gonzalo</td>
+                                <td>Montiel</td>
+                                <td>Lateral</td>
+                                <td>25 años</td>
+                                <td><img src="./imgs/gonzaMontiel.jpg" alt="Gonzalo Montiel" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Cristian</td>
+                                <td>Romero</td>
+                                <td rowspan="2">Defensor</td>
+                                <td>24 años</td>
+                                <td><img src="./imgs/cutiRomero.webp" alt="Cuti Romero" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Nicolás</td>
+                                <td>Otamendi</td>
+                                <td>34 años</td>
+                                <td><img src="./imgs/nicoOtamendi.jpg" alt="Nicolás Otamendi" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Marcos</td>
+                                <td>Acuña</td>
+                                <td>Lateral</td>
+                                <td>31 años</td>
+                                <td><img src="./imgs/marcosAcuña.jpg" alt="Marcos Acuña" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Rodrigo</td>
+                                <td>De Paul</td>
+                                <td rowspan="3">Mediocampista</td>
+                                <td>28 años</td>
+                                <td><img src="./imgs/rodriDePaul.webp" alt="Rodrigo De Paul" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Enzo</td>
+                                <td>Fernandez</td>
+                                <td>21 años</td>
+                                <td><img src="./imgs/enzoFernandez.jpg" alt="Enzo Fernandez" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Alexis</td>
+                                <td>Mac Allister</td>
+                                <td>23 años</td>
+                                <td><img src="./imgs/alexisMacAllister.jpg" alt="Alexis Mac Allister" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Angel</td>
+                                <td>Di Maria</td>
+                                <td>Extremo</td>
+                                <td>34 años</td>
+                                <td><img src="./imgs/angelDiMaria.jpg" alt="Angel Di Maria" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Lautaro</td>
+                                <td>Martinez</td>
+                                <td rowspan="2">Centro delantero</td>
+                                <td>25 años</td>
+                                <td><img src="./imgs/lautaroMartinez.webp" alt="Lautaro Martinez" class="fotoTabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Lionel</td>
+                                <td>Messi</td>
+                                <td>35 años</td>
+                                <td><img src="./imgs/messi.jpg" alt="Lionel Messi" class="fotoTabla"></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>           
         </section>
