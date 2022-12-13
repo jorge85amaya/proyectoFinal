@@ -180,7 +180,6 @@ article{
 
 .img-carta{
     width: 95%;
-    /* height: 70%; */
     border-radius: 15px;
 }
 
@@ -213,18 +212,14 @@ article{
 }
 
 .containInfo{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.801);
     color: #efefef;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-}
-
-.figu{
-    width: 360px;
-    height: 360px;
 }
 
 .listaSuplentes{
@@ -235,6 +230,10 @@ article{
     font-size: 3em;
     text-align: center;
     color: #efefef;
+}
+
+.cartaInfo{
+    width: 300px;
 }
 
 .cartasEquipo{
