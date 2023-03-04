@@ -10,3 +10,15 @@ inst.addEventListener('click', ()=>{
 face.addEventListener('click', ()=>{
     alert("vas a salir de esta página.");
 });
+
+let pOcultoBtn = document.getElementById('pOculto-btn');
+let pOculto = document.getElementById('pOculto');
+
+pOcultoBtn.addEventListener('click', ()=>{
+    pOculto.classList.toggle('mostrar')
+    if(pOculto.classList.contains('mostrar')){
+        pOcultoBtn.innerHTML = ' ...ver menos';
+    } else {
+        pOcultoBtn.innerHTML = ' ...ver mas';
+    }
+});

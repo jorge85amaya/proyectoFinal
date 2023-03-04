@@ -1,4 +1,3 @@
-
 let boton = document.getElementById('btn-ingreso');
 
 boton.addEventListener('click', ()=>{
@@ -9,3 +8,6 @@ boton.addEventListener('click', ()=>{
         alert("Ingresara bajo su propia responsabilidad.");
     }
 }); 
+
+ 
+
