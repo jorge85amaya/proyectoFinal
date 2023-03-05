@@ -75,7 +75,7 @@
         </section>
         <section class="cartas" id="cartas">
             <h2>Formacion</h2>
-            <div class="cartasEquipo">
+            <div class="containCancha">
                 <div class="suplentes">
                     <h3>Suplentes</h3>
                     <ul class="listaSuplentes">
@@ -251,27 +251,27 @@
         <section class="form" id="form">
             <h2>Registro</h2>
             <form action="#" class="containerForm">
-                <input type="text" name="nombre" id="nombre" class="casilla" placeholder="Nombre">
-                <input type="text" name="apellido" id="apellido" class="casilla" placeholder="Apellido">
-                <input type="email" name="correo" id="correo" class="casilla" placeholder="email">
-                <input type="password" name="contraseña" id="contraseña" class="casilla" placeholder="Contraseña">            
+                <input class="form-control  form-size form-control-lg" type="text" placeholder="Nombre" aria-label=".form-control-lg example">
+                <input class="form-control  form-size form-control-lg" type="text" placeholder="Apellido" aria-label=".form-control-lg example">
+                <input class="form-control  form-size form-control-lg" type="email" placeholder="Email" aria-label=".form-control-lg example">
+                <input class="form-control  form-size form-control-lg" type="password" placeholder="Contraseña" aria-label=".form-control-lg example">          
                 <div class="nacimiento casilla">
                     <label for="nacimiento">Fecha de nacimiento:  </label>
                     <input type="date" name="nacimiento" id="nacimiento">
                 </div>
                 <div class="radio casilla">
                     <h4>Sexo:</h4>
-                    <label for="radio">Masculino</label>
+                    <label for="radio">Masc</label>
                     <input type="radio" name="radio" id="radio">
-                    <label for="radio">Femenino</label>
+                    <label for="radio">Fem</label>
                     <input type="radio" name="radio" id="radio">
                     <label for="radio">Me reservo</label>
                     <input type="radio" name="radio" id="radio">
                 </div>
                 <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Comentario" class="casilla"></textarea>
                 <div class="btns-input casilla">
-                    <input type="submit" value="Registrar" class="btn-input">
-                    <input type="reset" value="Borrar" class="btn-input">
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                    <input class="btn btn-primary" type="reset" value="Borrar">
                 </div>
             </form>
         </section>

@@ -194,6 +194,10 @@ article{
     padding: 30px;
 }
 
+.containCancha{
+    display: flex;
+}
+
 .cancha{
     display: flex;
     flex-direction: column;
@@ -295,7 +299,7 @@ article{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40%;
+    width: 30%;
 }
 
 .suplentes h3{
@@ -382,6 +386,11 @@ th{
     border: 2px solid #1975b3b9;
     margin: 10px 15px;
     padding: 5px 10px;
+}
+
+.form-size{
+    scale: 0.8;
+    margin: 10px auto;
 }
 
 aside{
@@ -540,6 +549,10 @@ footer{
         flex-direction: column-reverse;
     }
     
+    .containCancha{
+        flex-direction: column-reverse;
+    }
+
     .cancha{
         scale: 0.7;
     }
@@ -608,8 +621,8 @@ footer{
     .nav-info{
         width: 80px;
         position: fixed;
-        right: 20px;
-        bottom: 45px;
+        right: 15px;
+        bottom: 15px;
     }
     .btn-ingreso, .linkNav, .nav-info, .btn-input{
     padding: 5px;
